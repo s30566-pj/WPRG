@@ -3,7 +3,7 @@ session_start();
 
 $pplCount = isset($_POST['pplCountVal']) ? (int) $_POST['pplCountVal'] : -1;
 $_SESSION['pplCount'] = $pplCount;
-$_SESSION['person'][0] = $_POST['person'][0];
+$_SESSION['persons'][0] = $_POST['person'][0];
 
 if ($pplCount == 1) {
     header('Location: summary.php');

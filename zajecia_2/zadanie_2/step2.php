@@ -4,6 +4,17 @@ session_start();
 $pplCount = isset($_POST['pplCountVal']) ? (int) $_POST['pplCountVal'] : -1;
 $_SESSION['pplCount'] = $pplCount;
 $_SESSION['persons'][0] = $_POST['person'][0];
+$_SESSION['childBed'] = $_POST['childBedSelection'];
+foreach($_POST['stay'] as $index => $date) { //poważnie tak się to robi? (znalazłem na stacku (: )
+    $_SESSION['stay'][$index] = $date;
+}
+foreach($_POST['credit'] as $index => $data) {
+    $_SESSION['credit'][$index] = $data;
+}
+foreach($_POST['otherUdogodnieniaOption'] as $index => $data) {
+    $_SESSION['otherUdogodnieniaOption'][$index] = $data;
+}
+
 
 if ($pplCount == 1) {
     header('Location: summary.php');

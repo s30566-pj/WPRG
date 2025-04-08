@@ -1,0 +1,51 @@
+aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.asideBox{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 20%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-bottom: blue solid 1px;
+}
+.asideBoxTop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+    width: 100%;
+}
+.asideBoxBttm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    width: 100%;
+}
+#pplCountBttm{
+    font-size: 3em;
+}
+#datesBttm{
+    flex-direction: column;
+}
+#contactBttm{
+    flex-direction: column;
+}
+#paymentBttm{
+    flex-direction: column;
+}
+#featuresBttm{
+    flex-direction: column;
+}
+p{
+    margin: 0;
+}
+#pplCountBttm > p{
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}

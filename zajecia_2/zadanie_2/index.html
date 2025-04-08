@@ -14,14 +14,14 @@
 
     </nav>
     <article>
-        <form action="reservation.php" method="post">
+        <form action="step2.php" method="post">
             <div id="basicInfo">
                 <div id="basicInfoHeading"><h2>Podstawowe informacje</h2></div>
                 <div id="basicInfoForm">
                     <div id="firstInfo">
                         <div id="pplCount">
-                            <h3>Ilość osób</h3>
-                            <select name="pplCountVal">
+                            <label for="pplCountVal">Ilość osób</label>
+                            <select id="pplCountVal" name="pplCountVal">
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
@@ -33,7 +33,7 @@
                             <div id="startEndDatesInputs">
                                 <label for="startDate">Od:</label>
                                 <input type="date" id="startDate" name="startDate" required>
-                                <label for="startDate">Do:</label>
+                                <label for="endDate">Do:</label>
                                 <input type="date" id="endDate" name="endDate" required>
                             </div>
                         </div>
@@ -41,27 +41,27 @@
                     <div id="personalInfo">
                         <h3>Informacje osobowe</h3>
                         <label for="fname">Imię:</label>
-                        <input type="text" id="fname" name="fname" required>
+                        <input type="text" id="fname" name="person[0][name]" placeholder="Adam" required>
                         <label for="lname">Nazwisko:</label>
-                        <input type="text" id="lname" name="lname" required>
+                        <input type="text" id="lname" name="person[0][lastName]" placeholder="Kowalski" required>
                         <label for="bday">Data urodzenia:</label>
-                        <input type="date" id="bday" name="bday" required>
+                        <input type="date" id="bday" name="person[0][bday]" required>
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" name="person[0][email]" placeholder="adam@domena.tld" required>
                     </div>
                     <div id="paymentInfo">
                         <h3>Karta płatnicza</h3>
                         <label for="creditFname">Imię:</label>
-                        <input type="text" id="creditFname" name="fname" required>
+                        <input type="text" id="creditFname" name="credit[name]" required>
                         <label for="creditLname">Nazwisko:</label>
-                        <input type="text" id="creditLname" name="lname" required>
+                        <input type="text" id="creditLname" name="credit[surname]" required>
                         <label for="cardNumber">Numer karty:</label>
-                        <input type="number" id="cardNumber" name="cardNumber" pattern="[0-9]{13,16}" placeholder="np. 1234123412341234"  required>
+                        <input type="number" id="cardNumber" name="credit[number]" pattern="[0-9]{13,16}" placeholder="np. 1234123412341234"  required>
                         <div id="smallerCardInfo">
                         <label for="cvv">CVV:</label>
-                        <input type="number" id="cvv" name="cvv" pattern="[0-9]{3}" placeholder="123" required>
+                        <input type="number" id="cvv" name="credit[cvv]" pattern="[0-9]{3}" placeholder="123" required>
                             <label for="exp">Exp</label>
-                            <input type="text" id="exp" name="expiry" pattern="[0-9]{2}\/[0-9]{2}" placeholder="03/29" required>
+                            <input type="text" id="exp" name="credit[expiry]" pattern="[0-9]{2}\/[0-9]{2}" placeholder="03/29" required>
                         </div>
                     </div>
                 </div>
@@ -82,11 +82,11 @@
                         <div id="otherUdogodnieniaHeading"><h3>Pozostałe</h3></div>
                         <div id="otherUdogodnieniaList">
                             <div class="checkbox">
-                                <input type="checkbox" id="otherUdogodnieniaPopielniczka" name="otherUdogodnieniaOption" value="Popielniczka">
+                                <input type="checkbox" id="otherUdogodnieniaPopielniczka" name="otherUdogodnieniaOption[ashtray]" value="1">
                                 <label for="otherUdogodnieniaPopielniczka">Popielniczka</label>
                             </div>
                             <div class="checkbox">
-                                <input type="checkbox" id="otherUdogodnieniaKlimatyzacja" name="otherUdogodnieniaOption" value="Klimatyzacja">
+                                <input type="checkbox" id="otherUdogodnieniaKlimatyzacja" name="otherUdogodnieniaOption[conditioning]" value="1">
                                 <label for="otherUdogodnieniaKlimatyzacja">Klimatyzacja</label>
                             </div>
                         </div>

@@ -8,7 +8,7 @@ body{
     background-color: white;
     align-items: center;
     justify-content: center;
-    font-family: "Comic Sans MS";
+    font-family: "Comic Sans MS", serif;
 }
 h2{
     margin: 0;
@@ -91,6 +91,10 @@ main form{
     height: 30%;
     align-items: center;
     justify-content: center;
+}
+#pplCountLabel{
+    font-size: 1.2em;
+    font-weight: bold;
 }
 #pplCount select{
     width: 50%;

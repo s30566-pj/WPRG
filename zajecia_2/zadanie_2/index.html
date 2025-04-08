@@ -32,9 +32,9 @@
                             <div id="startDateHeading"><h3>Czas pobytu</h3></div>
                             <div id="startEndDatesInputs">
                                 <label for="startDate">Od:</label>
-                                <input type="date" id="startDate" name="startDate" required>
+                                <input type="date" id="startDate" name="stay[start]" required>
                                 <label for="endDate">Do:</label>
-                                <input type="date" id="endDate" name="endDate" required>
+                                <input type="date" id="endDate" name="stay[end]" required>
                             </div>
                         </div>
                     </div>
@@ -48,6 +48,8 @@
                         <input type="date" id="bday" name="person[0][bday]" required>
                         <label for="email">Email:</label>
                         <input type="email" id="email" name="person[0][email]" placeholder="adam@domena.tld" required>
+                        <label for="phone">Numer telefonu:</label>
+                        <input type="tel" id="phone" name="person[0][phone]" placeholder="+48123456789" required>
                     </div>
                     <div id="paymentInfo">
                         <h3>Karta płatnicza</h3>
@@ -91,7 +93,11 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
+            </div>
+            <div id="buttonSection">
+                <button type="submit">Przejdź dalej</button>
             </div>
         </form>
     </article>

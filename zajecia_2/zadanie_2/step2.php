@@ -17,7 +17,8 @@ if ($pplCount == 1) {
 <head>
     <meta charset="UTF-8">
     <title>Kalkulator</title>
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/step2Style.css">
 </head>
 <body>
 <header>

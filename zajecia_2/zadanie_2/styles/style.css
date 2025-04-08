@@ -47,49 +47,7 @@ main article{
     align-items: center;
     justify-content: center;
 }
-main form{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    flex-flow: row wrap;
-}
-#repeatableSection{
-    width: 100%;
-    height: 90%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    flex-flow: row wrap;
-}
-.basicInfoForm{
-    display: flex;
-    width: 20%;
-    height: 45%;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    flex-basis: 40%;
 
-}
-.basicInfoForm h3{
-    text-align: center;
-}
-.personalInfo{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 30%;
-}
-#buttonSection{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 10%;
-
-}
 footer{
     width: 100%;
     height: 5%;

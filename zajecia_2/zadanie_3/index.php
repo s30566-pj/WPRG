@@ -1,7 +1,7 @@
 <?php
 if ($_GET['num']){
     $number = (int) $_GET['num'];
-    $iteration = null;
+    $iteration = 0;
 
     function isPrime()
     {

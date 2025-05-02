@@ -1,0 +1,22 @@
+Na serwerze, w piwniczce, gdzie światła brak,
+Admin siedzi od rana – już czwarty dzień tak.
+Ma kubek po kawie, trzy pizze w kącie,
+A kot na klawiaturze robi "deploy" na froncie.
+
+Logi się sypią jak śnieg w styczniu,
+Firewall płonie jak grill w ognisku.
+A pan dyrektor pyta przez Teamsa:
+"Co z tym Excelem? Bo mi nie klika!"
+
+Skrypt w bashu pisany o drugiej w nocy,
+Ma więcej błędów niż kod w Excelu cioci.
+Git się zbuntował, bo "merge" był zły,
+Teraz cała produkcja leży jak my.
+
+Na Slacku krzyczą: "PANIKA! ATAK!"
+A to tylko printer, co mówi "Paper Jam – wracaj!"
+Admin wzdycha, restartuje DNS,
+I znowu czuje się jak IT-mesjasz.
+
+Więc gdy ci kiedyś padnie Wi-Fi w kiblu,
+Pomyśl o Adminie... On nie ma urlopu od lipca.

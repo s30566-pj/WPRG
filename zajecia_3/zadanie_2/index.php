@@ -1,20 +1,13 @@
 <?php
-if (! file_exists("number.txt") || filesize("number.txt") > 0){
-    $openedFile = fopen("number.txt", "w+");
-    if ($openedFile) {
-    fwrite($openedFile, "0");
-    fclose($openedFile);
-    }
-    else{
-        echo "Błąd! Czy plik istnieje?\n";
-    }
-} else {
-    $openedFile = fopen("number.txt", "w");
-    $size = filesize("number.txt");
-    $view = fread($openedFile, $size);
-    fwrite($openedFile, $view+1);
-    fclose($openedFile);
+$views = 0;
+$filename="number.txt";
+if (! file_exists($filename)){
+    file_put_contents($filename, "0");
 }
+        $views = (int)file_get_contents($filename);
+        $views ++;
+        file_put_contents($filename, $views);
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -27,6 +20,6 @@ if (! file_exists("number.txt") || filesize("number.txt") > 0){
 </head>
 <body>
 <h1>Odwiedzin:</h1>
-<h2><? echo $view ?></h2>
+<h2><?php echo $views ?></h2>
 </body>
 </html>

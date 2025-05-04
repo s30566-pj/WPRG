@@ -1,0 +1,55 @@
+.top{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.mid{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+table{
+    height: 100%;
+    width: 96%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+td, th {
+    text-align: center;
+    padding: .5%;
+}
+
+td {
+    border-right: 1px solid #f8f8f8;
+    font-size: .8rem;
+    height: 10%;
+}
+
+th {
+    color: #ffffff;
+    background: #4FC3A1;
+    height: 2%;
+    font-size: 1rem;
+}
+
+
+th:nth-child(odd) {
+    color: #ffffff;
+    background: #324960;
+}
+
+tr:nth-child(even) {
+    background: #F8F8F8;
+}
+
+table:first-child{
+    height: 10%;
+}

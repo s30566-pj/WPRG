@@ -22,11 +22,11 @@
                     <div id="firstInfo">
                         <div id="pplCount">
                             <label id="pplCountLabel" for="pplCountVal">Ilość osób</label>
-                            <select id="pplCountVal" name="pplCountVal">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
+                            <select <?php echo isset($_COOKIE['pplCount']) ? "value=\"".htmlspecialchars($_COOKIE['pplCount'])."\"" : '';?> id="pplCountVal" name="pplCountVal">
+                                <option value="1" <?php echo isset($_COOKIE['pplCount']) && $_COOKIE['pplCount'] == 1 ? "selected" : '';?>>1</option>
+                                <option value="2" <?php echo isset($_COOKIE['pplCount']) && $_COOKIE['pplCount'] == 2 ? "selected" : '';?>>2</option>
+                                <option value="3" <?php echo isset($_COOKIE['pplCount']) && $_COOKIE['pplCount'] == 3 ? "selected" : '';?>>3</option>
+                                <option value="4" <?php echo isset($_COOKIE['pplCount']) && $_COOKIE['pplCount'] == 4 ? "selected" : '';?>>4</option>
                             </select>
                         </div>
                         <div id="startEndDate">

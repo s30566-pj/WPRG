@@ -3,6 +3,7 @@ session_start();
 
 $pplCount = isset($_POST['pplCountVal']) ? (int) $_POST['pplCountVal'] : -1;
 $_SESSION['pplCount'] = $pplCount;
+setcookie("pplCount", $pplCount, time() + 86400);
 $_SESSION['persons'][0] = $_POST['person'][0];
 $_SESSION['childBed'] = $_POST['childBedSelection'];
 foreach($_POST['stay'] as $index => $date) { //poważnie tak się to robi? (znalazłem na stacku (: )
@@ -24,7 +25,7 @@ if ($pplCount == 1) {
 }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <title>Kalkulator</title>

@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100dvh;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    font-family: "Comic Sans MS", serif;
+}
+h2{
+    margin: 0;
+}
+header{
+    width: 100%;
+    height: 10%;
+    background-color: white;
+    border-bottom: 1px solid blue;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 85%;
+}
+
+main nav, main aside{
+    width: 20%;
+    height: 100%;
+    background-color: white;
+    border-right: 1px solid blue;
+    border-left: 1px solid blue;
+}
+
+main article{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    width: 100%;
+    height: 5%;
+    border: 1px solid blue;
+    border-radius: 5px;
+}
